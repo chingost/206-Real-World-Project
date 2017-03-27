@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Forum</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <script type="text/javascript">
+        function toggle_visibility(id) {
+            var e = document.getElementById(id);
+            if(e.style.display == 'block')
+                e.style.display = 'none';
+            else
+                e.style.display = 'block';
+    }
+        </script>
+	</head>
+	<body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">FLEX</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="generic.html">Workouts</a></li>
+							<li><a href="progress.html">Progress</a></li> 
+							<li><a href="generic.html">Profile</a></li>
+							<li><a href="PT.html">Trainer Advice</a></li> 
+							<li><a href="Forum.html">Community</a></li> 
+							<li><a href="elements.html">Contact Information</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+                            <span class="image main"><img src="images/pic13.jpg" alt="" /></span>
+							<h1>FAQs</h1>
+                            <a onclick="toggle_visibility('f1');">Question_1</a> 
+                            <div style="display:none" id="f1">Answer</div>
+                            <br>
+                            <a onclick="toggle_visibility('f2');">Question_2</a>  
+                            <div style="display:none" id="f2">Answer</div>
+                            <br>
+                            <a onclick="toggle_visibility('f3');">Question_3</a> 
+                            <div style="display:none" id="f3">Answer</div>
+                            <br>
+                            <a onclick="toggle_visibility('f4');">Question_4</a>           
+                            <div style="display:none" id="f4">Answer</div>
+                            <br>
+                            <a onclick="toggle_visibility('f5');">Question_5</a> 
+                            <div style="display:none" id="f5">Answer</div>
+                            <br>
+                            <a onclick="toggle_visibility('f6');">Question_6</a> 
+                            <div style="display:none" id="f6">Answer</div>
+                            <br>
+                            <a onclick="toggle_visibility('f7');">Question_7</a> 
+                            <div style="display:none" id="f7">Answer</div>
+                            <br>
+                            <a onclick="toggle_visibility('f8');">Question_8</a>
+                            <div style="display:none" id="f8">Answer</div>
+                            <br>
+                            <a onclick="toggle_visibility('f9');">Question_9</a> 
+                            <div style="display:none" id="f9">Answer</div>
+                            <br>
+                            <a onclick="toggle_visibility('f10');">Question_0</a>          
+                            <div style="display:none" id="f10">Answer</div>
+                            <br>
+                            <br>
+                            <br>
+                            <h1>ASK A QUESTION</h1>
+                            <section>
+                                <form method="post">
+                                    <div class="field">
+                                        <input type="text" name="Quesion" id="question" placeholder="Question"/>
+                                        <textarea name="message" id="description" placeholder="Detail"></textarea>
+                                    </div>
+                                    <ul class="action">
+                                        <li><input type="submit" value="submit" class="special"/>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </section>
+                            <h1>COMMUNITY</h1>
+                            <div class="tab">
+                                <button class="tablinks" onclick="openQuestion(event, 'New')" id="defaultOpen">New</button>
+                                <button class="tablinks" onclick="openQuestion(event, 'Top')">Top</button>
+                                <button class="tablinks" onclick="openQuestion(event, 'Unanswered')">Unanswered</button>
+                            </div>
+
+                            <div id="New" class="tabcontent">
+                                <h3>New_Question_1</h3>
+                                <p>Answer</p>
+                                <h3>New_Question_2</h3>
+                                <P>Answer</P>
+                            </div>
+
+                            <div id="Top" class="tabcontent">
+                                <h3>Top_Question_1</h3>
+                                <p>Answer</p> 
+                            </div>
+
+                            <div id="Unanswered" class="tabcontent">
+                                <h3>Question_1</h3>
+                                <p>Answer</p>
+                            </div>
+						</div>
+					</div>
+                
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="field half first">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="field half">
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="field">
+										<textarea name="message" id="message" placeholder="Message"></textarea>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="special" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+									<li><a href="#" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon style2 fa-500px"><span class="label">500px</span></a></li>
+									<li><a href="#" class="icon style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+            <script src="Forum.js"></script>
+	</body>
+</html>
